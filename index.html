@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scaleable=no">
+    <title>Jaewon Chang</title>
+    <link rel="icon" href="chicken.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b58f5b2e5d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="row">
+  <div class="left-column">
+    <div class="headshot">
+        <img src="self.PNG" width="230" height="321">
+    </div>
+    <h2 class="name">Jaewon Chang</h2>
+    <p class="position">
+        Undergraduate Student
+        <br><br>
+        University of California, Berkeley
+        <br><br>
+        changjaewon0315@berkeley.edu
+    </p>
+    <div class="icon">
+        <a href="https://scholar.google.com/citations?user=G88rr4IAAAAJ&hl=en"><i class="fa-brands fa-google-scholar"></i></a>
+        <a href="https://github.com/0315jaewon"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/changjaewon/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto: changjaewon0315@berkeley.edu" class="navbar__link"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+  <div class="right-column">
+    <h2>About me</h2>
+    <p>Hello, I'm Jaewon! I'm an undergraduate student at Berkeley studying EECS and pure mathematics. My
+        research interests broadly fall under the realm of adversarial learning in ML and memory underutilization
+        in Systems. I enlisted in the South Korean army after completing two year of my education at Berkeley.
+        Prior to leaving for the army, I've been fortunate to have been involved in research at
+        <a href="https://bair.berkeley.edu/">BAIR</a> and <a href="https://sky.cs.berkeley.edu/">SkyLab</a>,
+        under the guidance of <a href="https://chawins.github.io/">Chawin Sitawarin</a> and
+        <a href="https://sites.google.com/view/jaewanhong/home">Jaewan Hong</a> respectively.
+        <br><br>
+        My latest involvements in BAIR research include developing a robust defense against adversarial attacks,
+        which have previously been proven to be <a href="https://arxiv.org/abs/1412.6572">transferable</a> across
+        neural networks. My involvements in SkyLab research include developing ways to resolve the
+        problem of memory underutilization across nodes within peer-to-peer networks.
+        <br><br>
+        Recently, I've been spending most of my free time in the army reading non-fiction novels like 
+        <a href="https://www.goodreads.com/book/show/37976541-bad-blood">Bad Blood</a> by John Carreyrou,
+        <a href="https://www.goodreads.com/en/book/show/43868109">Empire of Pain</a> by Patrick Keefe, among others.
+        I've also been reading about ML subtopics foreign to me, including RL and CV.
+        <br><br>
+        I also have a great passion for teaching, having tutored numerous middle and high school students on science
+        and math. During my first two years at Berkeley, I've been apart of the EECS 16A course staff for two
+        semesters, and the Academic Intern team for CS 61C and CS 70.
+        <br><br>
+        Outside of academics, some of my hobbies include going to the gym, reading novels, and playing league of
+        legends! I played for Berkeley's division 1 collegiate league of legends team, and my top rank was GM on
+        the korean server. 
+
+    </p>
+    <h2>News</h2>
+    <ul>
+        <li><b>[March 2024]</b> I created my personal website!</li>
+        <li><b>[January 2024]</b> Our paper on adversarial learning is accepted to ICLR 2024!</li>
+        <li><b>[September 2023]</b> I begin my mandatory military service in the South Korean army.</li>
+        <li><b>[September 2023]</b> Our paper on adversarial learning is submitted to ICLR 2024.</li>
+    </ul>
+    <h2>Publications</h2>
+    <div class="publication">
+        <div class="iclr">ICLR</div>
+        <img src="transfer_defense.png">
+        <div class="publication-info">
+            <div class="publication-title">Defending Against Transfer Attacks From Public Models</div>
+            <div class="publication-authors">Chawin Sitawarin, <u>Jaewon Chang</u>*, David Huang*, Wesson Altoyan, David Wagner</div>
+            <div class="publication-conference">In the Twelfth International Conference on Learning Representations (ICLR), 2024</div>
+            <div class="publication-hyperlinks">
+                <a href="https://arxiv.org/abs/2310.17645">PDF</a>
+                <a href="javascript:void(0);" id="show-citation">BIB</a>
+                <a href="https://github.com/wagner-group/pubdef">CODE</a>
+                <a href="https://wagner-group.github.io/projects/pubdef/index.html">WEBSITE</a>
+            </div>
+            <div class="citation-box" id="citation-box">
+                @inproceedings{sitawarin_defending_2024, <br>
+                    title = {Defending against Transfer Attacks from Public Models}, <br>
+                    booktitle = {The Twelfth International Conference on Learning Representations}, <br>
+                    author = {Sitawarin, Chawin and Chang{${*}$}, Jaewon and Huang{${*}$}, David and Altoyan, Wesson and Wagner, David}, <br>
+                    year = {2024}, <br>
+                    month = jan, <br>
+                    url = {https://openreview.net/forum?id=Tvwf4Vsi5F}, <br>
+                    archiveprefix = {arxiv}, <br>
+                    keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Cryptography and Security,Computer Science - Machine Learning,notion}, <br>
+                    }
+            </div>
+        </div>
+    </div>
+    <h2>Teaching</h2>
+    <ul>
+        <li><b>[EECS 16A - Course Reader]</b> Fall 2022, Spring 2023</li>
+        <li><b>[CS 70 - Academic Intern]</b> Spring 2023</li>
+        <li><b>[CS 61C - Academic Intern]</b> Spring 2023</li>
+    </ul>
+    <h2>Technical Coursework</h2>
+    <div class="courses">
+    <h4>Fall 2021</h4>
+    <ul>
+        <li>[CS 61A] Interpretation of Computer Programs</li>
+        <li>[EECS 16A] Information Devices and Systems I</li>
+        <li>[Math 53] Multivariable Calculus</li>
+    </ul>
+    <h4>Fall 2022</h4>
+    <ul>
+        <li>[CS 61C] Computer Architecture</li>
+        <li>[CS 170] Efficient Algorithms</li>
+        <li>[Math 110] Linear Algebra</li>
+    </ul>
+    </div>
+    <div class="courses">
+    <h4>Spring 2022</h4>
+    <ul>
+        <li>[CS 61B] Data Structures</li>
+        <li>[EECS 16B] Information Devices and Systems II</li>
+        <li>[CS 70] Discrete Math and Probability</li>
+    </ul>
+    <h4>Spring 2023</h4>
+    <ul>
+        <li>[EECS 126] Probability and Random Processes</li>
+        <li>[EECS 127] Optimization</li>
+        <li>[CS 189] Introduction to ML</li>
+    </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+    document.getElementById("show-citation").addEventListener("click", function() {
+        var citationBox = document.getElementById("citation-box");
+        citationBox.style.display = citationBox.style.display === "block" ? "none" : "block";
+    });
+</script>
+
+</body>
+</html>

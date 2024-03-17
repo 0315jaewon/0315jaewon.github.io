@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    font-family: "Crimson Pro", sans-serif;
+    background-color: azure;
+}
+
+body {
+    margin: 80px 100px;
+}
+
+.headshot img{
+    border-radius: 16px;
+    display: block;
+}
+
+.name {
+    text-align: center;
+}
+
+.position {
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}
+
+.left-column h2 {
+    color: rgb(38, 11, 97);
+}
+
+.right-column {
+    float: left;
+    width: 70%;
+    padding-left: 60px;
+}
+
+.right-column h2 {
+    color: rgb(38, 11, 97);
+}
+
+.right-column p {
+    color: gray;
+}
+
+.right-column p a {
+    text-decoration: none;
+    color: rgb(19, 9, 40);
+}
+
+.left-column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.courses {
+    float: left;
+    width: 50%;
+}
+
+.icon {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    margin: 0px 40px;
+    transform: scale(1.5);
+    justify-content: space-between;
+}
+
+.icon i {
+    color:rgb(47, 20, 104);
+}
+
+.icon a {
+    margin: 0 5px;
+}
+
+.publication {
+    display: flex;
+    align-items: flex-start;
+}
+
+.publication img{
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.publication-info {
+    flex-grow: 1;
+}
+
+.publication-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.publication-authors {
+    margin-bottom: 10px;
+}
+
+.publication-conference {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.publication-hyperlinks {
+    display: flex;
+}
+
+.publication-hyperlinks a {
+    display: inline-block;
+    margin: 0px 2px;
+    padding: 5px 10px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.bibtex {
+    display: none;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+.citation-box {
+    width: 400px;
+    font: monospace;
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #dbd2d2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.iclr {
+    position: absolute;
+    color: white;
+    font-weight: 550;
+    padding-left: 7px;
+    padding-right: 7px;
+    background-color: rgb(54, 40, 163);
+}
