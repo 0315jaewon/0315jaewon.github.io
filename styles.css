@@ -52,6 +52,15 @@ body {
     padding: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    .left-column,
+    .right-column {
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+}
+
 .row:after {
     content: "";
     display: table;
