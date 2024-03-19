@@ -160,3 +160,7 @@ body {
     padding-right: 7px;
     background-color: rgb(54, 40, 163);
 }
+
+.project-titles a{
+    text-decoration: none;
+}
