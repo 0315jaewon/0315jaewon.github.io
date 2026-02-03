@@ -1,16 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/_next/(.*)",
-      "destination": "https://research-planner-wheat.vercel.app/_next/$1"
-    },
-    {
       "source": "/research-planner",
-      "destination": "https://research-planner-wheat.vercel.app"
+      "destination": "https://research-planner-wheat.vercel.app/research-planner"
     },
     {
       "source": "/research-planner/(.*)",
-      "destination": "https://research-planner-wheat.vercel.app/$1"
+      "destination": "https://research-planner-wheat.vercel.app/research-planner/$1"
     }
   ]
 }
