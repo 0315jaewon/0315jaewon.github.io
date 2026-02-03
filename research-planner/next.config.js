@@ -1,22 +1,13 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === "production";
+const isVercel = process.env.VERCEL === "1";
+const useExport = isProd && !isVercel;
 
 const nextConfig = {
-  basePath: isProd ? "/research-planner" : undefined,
-  assetPrefix: isProd ? "/research-planner/" : undefined,
+  ...(useExport ? { output: "export", trailingSlash: true } : {}),
+  basePath: useExport ? "/research-planner" : undefined,
+  assetPrefix: useExport ? "/research-planner/" : undefined,
   images: { unoptimized: true },
-
-  async redirects() {
-    return isProd
-      ? [
-          {
-            source: "/",
-            destination: "/research-planner",
-            permanent: false,
-          },
-        ]
-      : [];
-  },
 };
 
 module.exports = nextConfig;
