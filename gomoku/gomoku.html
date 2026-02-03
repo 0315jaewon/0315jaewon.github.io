@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomoku</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gomoku.css">
+</head>
+<body>
+    <div class="game-shell">
+        <header class="game-header">
+            <div>
+                <p class="game-eyebrow">GOMOKU</p>
+                <h1>Play Five in a Row</h1>
+            </div>
+            <div class="game-actions">
+                <span class="status-pill" id="status">Black to move</span>
+                <button class="reset-btn" id="reset-btn" type="button">Reset</button>
+            </div>
+        </header>
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+        <div class="game-layout">
+            <div id="game-board-outer">
+                <table id="game-board" aria-label="Gomoku board"></table>
+            </div>
+            <aside class="game-rules" aria-label="How to play">
+                <h2>How to Play</h2>
+                <p>Players alternate placing stones on the intersections of the grid. Black moves first.</p>
+                <p>The first player to place five stones in a row (horizontal, vertical, or diagonal) wins.</p>
+                <p class="rules-label">Black-only restriction</p>
+                <p>Black may not play a move that creates two or more <em>open threes</em> or two or more <em>open fours</em> at once.</p>
+                <p class="rules-note">An open three/four is a straight line of three/four black stones with empty intersections on both ends. If one end is blocked, the move is allowed.</p>
+            </aside>
+        </div>
+    </div>
+
+    <script src="gomoku.js"></script>
+
+</body>
+</html>

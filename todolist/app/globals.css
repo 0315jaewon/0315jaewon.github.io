@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-sand-50 text-ink-900 antialiased;
+  background-image: radial-gradient(circle at top, #fffdf9 0%, #f7f2ea 55%, #f3ede3 100%);
+}
+
+* {
+  @apply box-border;
+}
+
+::selection {
+  background: #e6ded0;
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+}
+
+a {
+  @apply text-ink-800 hover:text-ink-900;
+}
+
+.card {
+  @apply rounded-2xl border border-sand-200 bg-white shadow-sm;
+}
+
+.card-muted {
+  @apply rounded-2xl border border-sand-200 bg-sand-50;
+}
+
+.chip {
+  @apply rounded-full bg-sand-100 px-2 py-1 text-[10px] uppercase tracking-[0.2em] text-ink-600;
+}
+
+.day-pill {
+  @apply rounded-full border border-sand-200 px-3 py-1 text-xs text-ink-700;
+}
+
+.day-pill.is-active {
+  @apply bg-ink-900 text-white border-ink-900;
+}
+
+.check {
+  @apply h-4 w-4 appearance-none rounded border border-sand-300 bg-white;
+  position: relative;
+}
+
+.check:checked {
+  @apply border-ink-900 bg-ink-900;
+}
+
+.check:checked::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}

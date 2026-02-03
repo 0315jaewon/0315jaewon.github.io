@@ -1,156 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scaleable=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaewon Chang</title>
     <link rel="icon" href="chicken.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="font-awesome.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b58f5b2e5d.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-
 </head>
 <body>
-
-<div class="row">
-  <div class="left-column">
-    <div class="headshot">
-        <img src="self.PNG" width="230" height="321" class="center">
-    </div>
-    <h2 class="name">Jaewon Chang</h2>
-    <p class="position">
-        Undergraduate Student
-        <br><br>
-        University of California, Berkeley
-        <br><br>
-        changjaewon0315@berkeley.edu
-    </p>
-    <div class="icon">
-        <a href="https://scholar.google.com/citations?user=G88rr4IAAAAJ&hl=en"><i class="fa-brands fa-google-scholar"></i></a>
-        <a href="https://github.com/0315jaewon"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/changjaewon/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="mailto: changjaewon0315@berkeley.edu" class="navbar__link"><i class="fa-solid fa-envelope"></i></a>
-    </div>
-  </div>
-  <div class="right-column">
-    <h2>About me</h2>
-    <p>Hello, I'm Jaewon! I'm an undergraduate student at Berkeley studying EECS and pure mathematics. My
-        research interests gravitate towards adversarial learning in ML and addressing memory underutilization
-        in Systems. After two years at Berkeley, I took a detour and enlisted in the South Korean army.
-        Before that, I've been fortunate to have been involved in research at
-        <a href="https://bair.berkeley.edu/">BAIR</a> and <a href="https://sky.cs.berkeley.edu/">SkyLab</a>,
-        under the guidance of <a href="https://chawins.github.io/">Chawin Sitawarin</a> and
-        <a href="https://sites.google.com/view/jaewanhong/home">Jaewan Hong</a> respectively.
-        <br><br>
-        At BAIR, I've been involved in developing robust defenses against adversarial attacks, which have
-        previously been proven to be <a href="https://arxiv.org/abs/1412.6572">transferable</a> across
-        neural networks. Meanwhile, at SkyLab, I used to work on developing ways to tackle the
-        challenge of memory underutilization within peer-to-peer networks.
-        <br><br>
-        Recently, I've been spending most of my free time in the army reading non-fiction novels like 
-        <a href="https://www.goodreads.com/book/show/37976541-bad-blood">Bad Blood</a> by John Carreyrou,
-        <a href="https://www.goodreads.com/en/book/show/43868109">Empire of Pain</a> by Patrick Keefe, among others.
-        I've also been learning about new ML subtopics, including RL and CV.
-        <br><br>
-        I also have a great passion for teaching, having mentored numerous middle and high school students in science
-        and math. During my first two years at Berkeley, I've been apart of the EECS 16A course staff for two
-        semesters, and the Academic Intern team for CS 61C and CS 70.
-        <br><br>
-        Outside of academics, some of my hobbies include going to the gym, reading novels, and playing league of
-        legends. I was part of Berkeley's division 1 collegiate league of legends team, and my top rank was GM on
-        the korean server!
-
-    </p>
-    <h2>News</h2>
-    <ul>
-        <li><b>[March 2024]</b> I started the <a href="https://github.com/0315jaewon/Gomoku">Gomoku</a> project</li>
-        <li><b>[March 2024]</b> I created my personal website!</li>
-        <li><b>[January 2024]</b> Our paper on adversarial learning is accepted to ICLR 2024!</li>
-        <li><b>[September 2023]</b> I begin my mandatory military service in the South Korean army.</li>
-        <li><b>[September 2023]</b> Our paper on adversarial learning is submitted to ICLR 2024.</li>
-    </ul>
-    <h2>Publications</h2>
-    * = equal contribution
-    <br><br>    
-    <div class="publication">
-        <div class="iclr">ICLR</div>
-        <img src="transfer_defense.png">
-        <div class="publication-info">
-            <div class="publication-title">Defending Against Transfer Attacks From Public Models</div>
-            <div class="publication-authors">Chawin Sitawarin, <u>Jaewon Chang</u>*, David Huang*, Wesson Altoyan, David Wagner</div>
-            <div class="publication-conference">In the Twelfth International Conference on Learning Representations (ICLR), 2024</div>
-            <div class="publication-hyperlinks">
-                <a href="https://arxiv.org/abs/2310.17645">PDF</a>
-                <a href="javascript:void(0);" id="show-citation">BIB</a>
-                <a href="https://github.com/wagner-group/pubdef">CODE</a>
-                <a href="https://wagner-group.github.io/projects/pubdef/index.html">WEBSITE</a>
-            </div>
-            <div class="citation-box" id="citation-box">
-                @inproceedings{sitawarin_defending_2024, <br>
-                    title = {Defending against Transfer Attacks from Public Models}, <br>
-                    booktitle = {The Twelfth International Conference on Learning Representations}, <br>
-                    author = {Sitawarin, Chawin and Chang{${*}$}, Jaewon and Huang{${*}$}, David and Altoyan, Wesson and Wagner, David}, <br>
-                    year = {2024}, <br>
-                    month = jan, <br>
-                    url = {https://openreview.net/forum?id=Tvwf4Vsi5F}, <br>
-                    archiveprefix = {arxiv}, <br>
-                    keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Cryptography and Security,Computer Science - Machine Learning,notion}, <br>
-                    }
+<div class="page">
+    <aside class="sidebar">
+        <img class="avatar" src="self.PNG" alt="Jaewon Chang portrait">
+        <h1>Jaewon Chang</h1>
+        <p class="subtitle">Undergraduate · UC Berkeley</p>
+        <p class="contact">changjaewon0315@berkeley.edu</p>
+        <div class="icon-row">
+            <a href="https://scholar.google.com/citations?user=G88rr4IAAAAJ&hl=en" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+            <a href="https://github.com/0315jaewon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/changjaewon/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto: changjaewon0315@berkeley.edu" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div class="sidebar-meta">
+            <div>
+                <span class="meta-label">Focus</span>
+                <span class="meta-value">AI Alignment & Safety</span>
             </div>
         </div>
-    </div>
-    <h2>Projects</h2>
-    <h4 class="project-titles"><a href="gomoku/gomoku.html">Gomoku</a>: A connect-5 game <a href="https://github.com/0315jaewon/Gomoku">[CODE]</a></h4>
-    <h2>Teaching</h2>
-    <ul>
-        <li><b>[EECS 16A - Course Reader]</b> Fall 2022, Spring 2023</li>
-        <li><b>[CS 70 - Academic Intern]</b> Spring 2023</li>
-        <li><b>[CS 61C - Academic Intern]</b> Spring 2023</li>
-    </ul>
-    <h2>Technical Coursework</h2>
-    <div class="courses">
-    <h4>Fall 2021</h4>
-    <ul>
-        <li>[CS 61A] Interpretation of Computer Programs</li>
-        <li>[EECS 16A] Information Devices and Systems I</li>
-        <li>[Math 53] Multivariable Calculus</li>
-    </ul>
-    <h4>Fall 2022</h4>
-    <ul>
-        <li>[CS 61C] Computer Architecture</li>
-        <li>[CS 170] Efficient Algorithms</li>
-        <li>[Math 110] Linear Algebra</li>
-    </ul>
-    </div>
-    <div class="courses">
-    <h4>Spring 2022</h4>
-    <ul>
-        <li>[CS 61B] Data Structures</li>
-        <li>[EECS 16B] Information Devices and Systems II</li>
-        <li>[CS 70] Discrete Math and Probability</li>
-    </ul>
-    <h4>Spring 2023</h4>
-    <ul>
-        <li>[EECS 126] Probability and Random Processes</li>
-        <li>[EECS 127] Optimization</li>
-        <li>[CS 189] Introduction to ML</li>
-    </ul>
-    </div>
-  </div>
+    </aside>
+
+    <main class="content">
+        <section class="about">
+            <div class="panel-grid">
+                <div>
+                    <p>Hello, I'm Jaewon, an undergraduate at UC Berkeley studying EECS. I'm currently involved in research
+                        at <a href="https://bair.berkeley.edu/">Berkeley AI Research</a>, working with both the
+                        <a href="https://nlp.cs.berkeley.edu/">Berkeley NLP Group</a> and Professor David Wagner's
+                        <a href="https://wagner-group.github.io/">Security Group</a>. In the NLP group, advised by
+                        <a href="https://www.alanesuhr.com/">Alane Suhr</a>, my work focuses on improving task decomposition
+                        and reasoning in language models; in the Security Group, advised by <a href="https://chawins.github.io/">Chawin Sitawarin</a>,
+                        I study jailbreak poisoning attacks and adversarial learning. Previously, I conducted distributed
+                        systems research at Berkeley's <a href="https://sky.cs.berkeley.edu/">Sky Computing Lab</a> under
+                        the guidance of <a href="https://sites.google.com/view/jaewanhong/home">Jaewan Hong</a>.</p>
+                </div>
+                <div>
+                    <h2>Recent News</h2>
+                    <ul class="quiet-list">
+                        <li><span>Jan 2026</span> Jailbreak Poisioning paper submitted to ICML.</li>
+                        <li><span>May 2025</span> Joined <a href="https://nlp.cs.berkeley.edu/">Berkeley NLP Group</a></li>
+                        <li><span>Mar 2025</span> Completed Military Service</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <nav class="tabs" role="tablist">
+            <button class="tab is-active" data-tab="research" role="tab" aria-selected="true">Research</button>
+            <button class="tab" data-tab="projects" role="tab">Builds</button>
+            <button class="tab" data-tab="teaching" role="tab">Teaching</button>
+            <button class="tab" data-tab="coursework" role="tab">Classes</button>
+        </nav>
+
+        <section class="panel is-active" id="research" role="tabpanel">
+            <p class="legend">* = equal contribution</p>
+            <article class="pub">
+                <div>
+                    <p class="pub-meta">ICLR 2024 · Conference Paper</p>
+                    <h2>Defending Against Transfer Attacks From Public Models</h2>
+                    <p class="authors">Chawin Sitawarin, <u>Jaewon Chang</u>*, David Huang*, Wesson Altoyan, David Wagner</p>
+                    <p class="venue-detail"><i>In the Twelfth International Conference on Learning Representations (ICLR), 2024</i></p>
+                    <div class="button-row">
+                        <a class="btn" href="https://arxiv.org/abs/2310.17645">PDF</a>
+                        <button class="btn ghost" id="show-citation" type="button">BibTeX</button>
+                        <a class="btn ghost" href="https://github.com/wagner-group/pubdef">Code</a>
+                        <a class="btn ghost" href="https://wagner-group.github.io/projects/pubdef/index.html">Project</a>
+                    </div>
+                    <div class="citation-box" id="citation-box">
+@inproceedings{sitawarin_defending_2024,
+  title = {Defending against Transfer Attacks from Public Models},
+  booktitle = {The Twelfth International Conference on Learning Representations},
+  author = {Sitawarin, Chawin and Chang{${*}$}, Jaewon and Huang{${*}$}, David and Altoyan, Wesson and Wagner, David},
+  year = {2024},
+  month = jan,
+  url = {https://openreview.net/forum?id=Tvwf4Vsi5F},
+  archiveprefix = {arxiv},
+}
+                    </div>
+                </div>
+                <img src="transfer_defense.png" alt="Paper teaser">
+            </article>
+        </section>
+
+        <section class="panel" id="projects" role="tabpanel">
+            <div>
+                <h2>Projects</h2>
+                <ul class="quiet-list">
+                    <li>
+                        <div class="project-row">
+                            <div>
+                                <strong><a href="AlgVisualizer/algvisualize.html">Algorithm Visualizer</a></strong>
+                            </div>
+                            <div class="action-links">
+                                <a class="action" href="AlgVisualizer/algvisualize.html">Open</a>
+                                <a class="action" href="AlgVisualizer/README.md">Code</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="project-row">
+                            <div>
+                                <strong><a href="todolist/README.md">Research Planner</a></strong> — research ops planner for weekly scheduling.
+                            </div>
+                            <div class="action-links">
+                                <a class="action" href="todolist/README.md">Open</a>
+                                <a class="action" href="todolist/README.md">Code</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="project-row">
+                            <div>
+                                <strong><a href="gomoku/gomoku.html">Gomoku</a></strong> — connect-5 game.
+                            </div>
+                            <div class="action-links">
+                                <a class="action" href="gomoku/gomoku.html">Play</a>
+                                <a class="action" href="https://github.com/0315jaewon/Gomoku">Code</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="panel" id="teaching" role="tabpanel">
+            <h2>Teaching</h2>
+            <ul class="quiet-list">
+                <li>CS 170 — Fall 2025, Spring 2026</li>
+                <li>EECS 16A — Fall 2022, Spring 2023</li>
+                <li>CS 70 — Academic Intern (Spring 2023)</li>
+                <li>CS 61C — Academic Intern (Spring 2023)</li>
+            </ul>
+        </section>
+
+        <section class="panel" id="coursework" role="tabpanel">
+            <div class="split-list">
+                <div>
+                    <h2>Coursework</h2>
+                    <ul class="quiet-list">
+                        <li><span>Fall 2021</span> CS 61A, EECS 16A, Math 53</li>
+                        <li><span>Spring 2022</span> CS 61B, CS 70, EECS 16B</li>
+                        <li><span>Fall 2022</span> CS 61C, CS 170, Math 110</li>
+                        <li><span>Spring 2023</span> CS 189, EECS 126, EECS 127</li>
+                        <li><span>Fall 2025</span> Physics 7A, CS 162, CS 182, EECS 183</li>
+                        <li><span>Spring 2026</span> Physics 7B, CS 184, EE290-16</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notes</h2>
+                    <p class="muted">
+                        I enjoy teaching; happy to chat about coursework, research, or project ideas.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 </div>
 
 <script>
-    document.getElementById("show-citation").addEventListener("click", function() {
-        var citationBox = document.getElementById("citation-box");
-        citationBox.style.display = citationBox.style.display === "block" ? "none" : "block";
+    const tabs = document.querySelectorAll(".tab");
+    const panels = document.querySelectorAll(".panel");
+
+    tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+            tabs.forEach((btn) => {
+                btn.classList.remove("is-active");
+                btn.setAttribute("aria-selected", "false");
+            });
+            panels.forEach((panel) => panel.classList.remove("is-active"));
+
+            tab.classList.add("is-active");
+            tab.setAttribute("aria-selected", "true");
+            document.getElementById(tab.dataset.tab).classList.add("is-active");
+        });
+    });
+
+    document.getElementById("show-citation").addEventListener("click", () => {
+        const citationBox = document.getElementById("citation-box");
+        citationBox.classList.toggle("is-visible");
     });
 </script>
-
 </body>
 </html>
