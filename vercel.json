@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/todolist",
+      "destination": "https://todolist-ten-zeta-85.vercel.app"
+    },
+    {
+      "source": "/todolist/(.*)",
+      "destination": "https://todolist-ten-zeta-85.vercel.app/$1"
+    }
+  ]
+}
