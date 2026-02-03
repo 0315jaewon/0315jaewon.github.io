@@ -2,11 +2,15 @@
   "rewrites": [
     {
       "source": "/todolist",
-      "destination": "https://todolist-ten-zeta-85.vercel.app"
+      "destination": "https://todolist-ten-zeta-85.vercel.app/"
     },
     {
-      "source": "/todolist/(.*)",
-      "destination": "https://todolist-ten-zeta-85.vercel.app/$1"
+      "source": "/todolist/",
+      "destination": "https://todolist-ten-zeta-85.vercel.app/"
+    },
+    {
+      "source": "/todolist/:path*",
+      "destination": "https://todolist-ten-zeta-85.vercel.app/:path*"
     }
   ]
 }
