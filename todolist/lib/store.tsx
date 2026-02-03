@@ -22,10 +22,10 @@ const defaultBucketTargets = (buckets: BucketDefinition[]) =>
     return acc;
   }, {} as Record<Bucket, number>);
 
-const defaultDailyGoals: Record<number, DailyFocus> = Array.from({ length: 7 }).reduce((acc, _, index) => {
+const defaultDailyGoals = Array.from({ length: 7 }).reduce<Record<number, DailyFocus>>((acc, _, index) => {
   acc[index] = { items: [], progress: "", papers: [] };
   return acc;
-}, {} as Record<number, DailyFocus>);
+}, {});
 
 const initialState: AppState = {
   storageVersion: STORAGE_VERSION,
