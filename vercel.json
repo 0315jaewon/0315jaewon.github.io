@@ -2,15 +2,11 @@
   "rewrites": [
     {
       "source": "/research-planner",
-      "destination": "https://research-planner-ten-zeta-85.vercel.app/"
+      "destination": "https://research-planner-wheat.vercel.app"
     },
     {
-      "source": "/research-planner/",
-      "destination": "https://research-planner-ten-zeta-85.vercel.app/"
-    },
-    {
-      "source": "/research-planner/:path*",
-      "destination": "https://research-planner-ten-zeta-85.vercel.app/:path*"
+      "source": "/research-planner/(.*)",
+      "destination": "https://research-planner-wheat.vercel.app/$1"
     }
   ]
 }
