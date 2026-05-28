@@ -122,11 +122,12 @@ a:hover {
 
 .sidebar-meta {
     display: grid;
-    gap: 10px;
+    gap: 12px;
     padding-top: 12px;
     border-top: 1px solid var(--hairline);
     width: 100%;
-    justify-items: center;
+    max-width: 220px;
+    text-align: left;
 }
 
 .meta-label {
@@ -137,8 +138,18 @@ a:hover {
     display: block;
 }
 
+.meta-item {
+    display: grid;
+    gap: 2px;
+    width: 100%;
+}
+
 .meta-value {
     font-size: 0.95rem;
+}
+
+.sidebar-meta .meta-item:first-child {
+    text-align: center;
 }
 
 .content {
@@ -342,6 +353,52 @@ a:hover {
     padding-bottom: 1px;
 }
 
+.experience-item {
+    display: grid;
+    gap: 4px;
+    max-width: 640px;
+    padding-top: 2px;
+}
+
+.experience-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.experience-role {
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.experience-role a {
+    color: var(--accent);
+    border-bottom-color: transparent;
+}
+
+.experience-role a:hover {
+    border-bottom-color: var(--accent);
+}
+
+.experience-date {
+    color: var(--muted);
+    flex-shrink: 0;
+    font-size: 0.84rem;
+    line-height: 1.4;
+    padding-top: 2px;
+    text-align: right;
+}
+
+.panel .experience-team {
+    color: var(--muted);
+    font-size: 0.86rem;
+    line-height: 1.45;
+    margin-bottom: 0;
+}
+
 .btn:hover {
     color: var(--accent);
     border-color: var(--accent);
@@ -364,12 +421,6 @@ a:hover {
 
 .citation-box.is-visible {
     display: block;
-}
-
-.split-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px;
 }
 
 .muted {
@@ -410,13 +461,12 @@ a:hover {
     }
 
     .sidebar-meta {
-        justify-items: center;
+        justify-self: center;
     }
 }
 
 @media (max-width: 720px) {
     .panel-grid,
-    .split-list,
     .pub {
         grid-template-columns: 1fr;
     }
@@ -424,6 +474,15 @@ a:hover {
     .project-row {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .experience-header {
+        display: grid;
+        gap: 2px;
+    }
+
+    .experience-date {
+        text-align: left;
     }
 }
 
