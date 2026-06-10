@@ -353,21 +353,24 @@ a:hover {
     padding-bottom: 1px;
 }
 
-.experience-item {
+.experience-item,
+.award-item {
     display: grid;
     gap: 4px;
     max-width: 640px;
     padding-top: 2px;
 }
 
-.experience-header {
+.experience-header,
+.award-header {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 24px;
 }
 
-.experience-role {
+.experience-role,
+.award-title {
     color: var(--text);
     font-size: 1rem;
     font-weight: 500;
@@ -383,7 +386,8 @@ a:hover {
     border-bottom-color: var(--accent);
 }
 
-.experience-date {
+.experience-date,
+.award-date {
     color: var(--muted);
     flex-shrink: 0;
     font-size: 0.84rem;
@@ -392,7 +396,8 @@ a:hover {
     text-align: right;
 }
 
-.panel .experience-team {
+.panel .experience-team,
+.panel .award-detail {
     color: var(--muted);
     font-size: 0.86rem;
     line-height: 1.45;
@@ -476,12 +481,14 @@ a:hover {
         align-items: flex-start;
     }
 
-    .experience-header {
+    .experience-header,
+    .award-header {
         display: grid;
         gap: 2px;
     }
 
-    .experience-date {
+    .experience-date,
+    .award-date {
         text-align: left;
     }
 }
