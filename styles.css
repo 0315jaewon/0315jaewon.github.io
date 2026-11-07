@@ -308,6 +308,10 @@ a:hover {
     padding-bottom: 12px;
 }
 
+.pub + .pub {
+    margin-top: 21px;
+}
+
 .pub img {
     width: 100%;
     border-radius: 12px;

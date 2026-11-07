@@ -75,12 +75,49 @@
             <p class="legend">* = equal contribution</p>
             <article class="pub">
                 <div>
+                    <p class="pub-meta">Preprint</p>
+                    <h2>SecPO: Principled Adversarial Training for Prompt Injection Security</h2>
+                    <p class="authors">Sizhe Chen, Yibo Peng, <u>Jaewon Chang</u>, Chawin Sitawarin, David Wagner</p>
+                    <p class="venue-detail"><i>Under submission to USENIX 2027.</i></p>
+                    <div class="button-row">
+                        <a class="btn" href="https://arxiv.org/pdf/2610.41998">PDF</a>
+                        <button class="btn ghost" data-citation-box="secpo-citation-box" aria-controls="secpo-citation-box" aria-expanded="false" type="button">BibTeX</button>
+                        <a class="btn ghost" href="https://github.com/Sizhe-Chen/SecPO">Code</a>
+                        <a class="btn ghost" href="https://sizhe-chen.github.io/SecPO-Website/">Project</a>
+                    </div>
+                    <div class="citation-box" id="secpo-citation-box">
+@misc{chen2026secpo,
+  title = {{SecPO}: Principled Adversarial Training for Prompt Injection Security},
+  author = {Chen, Sizhe and Peng, Yibo and Chang, Jaewon and Sitawarin, Chawin and Wagner, David},
+  year = {2026},
+  eprint = {2610.41998},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CR},
+  url = {https://arxiv.org/abs/2610.41998}
+}
+                    </div>
+                </div>
+                <!-- Figure 1 from https://arxiv.org/html/2610.41998v1 (CC BY 4.0). -->
+                <img class="pub-image-contained" src="secpo.svg" alt="SecPO paper figure comparing benign task utility and prompt injection attack success rates">
+            </article>
+            <article class="pub">
+                <div>
                     <p class="pub-meta">ICML 2026 · Spotlight Paper (top 2.2%)</p>
                     <h2>Rapid Poison: Practical Poisoning Attacks Against the Rapid Response Framework</h2>
                     <p class="authors">David Huang*, <u>Jaewon Chang</u>*, Avidan Shah*, Prateek Mittal, Chawin Sitawarin</p>
                     <p class="venue-detail"><i>43rd International Conference on Machine Learning (ICML), 2026. Also presented at the ICLR 2026 AIWILD Workshop.</i></p>
                     <div class="button-row">
                         <a class="btn" href="https://openreview.net/pdf?id=hvI3Syn2U7">PDF</a>
+                        <button class="btn ghost" data-citation-box="rapid-poison-citation-box" aria-controls="rapid-poison-citation-box" aria-expanded="false" type="button">BibTeX</button>
+                    </div>
+                    <div class="citation-box" id="rapid-poison-citation-box">
+@inproceedings{huang2026rapid,
+  title = {Rapid Poison: Practical Poisoning Attacks Against the Rapid Response Framework},
+  author = {David Huang and Jaewon Chang and Avidan Shah and Prateek Mittal and Chawin Sitawarin},
+  booktitle = {Forty-third International Conference on Machine Learning},
+  year = {2026},
+  url = {https://openreview.net/forum?id=hvI3Syn2U7}
+}
                     </div>
                 </div>
                 <img class="pub-image-contained" src="rapid_poison.png" alt="Rapid Poison paper teaser">
@@ -93,7 +130,7 @@
                     <p class="venue-detail"><i>Twelfth International Conference on Learning Representations (ICLR), 2024</i></p>
                     <div class="button-row">
                         <a class="btn" href="https://arxiv.org/abs/2310.17645">PDF</a>
-                        <button class="btn ghost" id="show-citation" type="button">BibTeX</button>
+                        <button class="btn ghost" id="show-citation" data-citation-box="citation-box" aria-controls="citation-box" aria-expanded="false" type="button">BibTeX</button>
                         <a class="btn ghost" href="https://github.com/wagner-group/pubdef">Code</a>
                         <a class="btn ghost" href="https://wagner-group.github.io/projects/pubdef/index.html">Project</a>
                     </div>
@@ -118,7 +155,7 @@
             <article class="experience-item">
                 <div class="experience-header">
                     <span class="experience-role">Machine Learning Engineer @ <a href="https://www.moloco.com/">Moloco</a></span>
-                    <span class="experience-date">Jun 2026 - Present</span>
+                    <span class="experience-date">June 2026 - Aug 2026</span>
                 </div>
                 <p class="experience-team">ML Ads Quality Team</p>
             </article>
@@ -179,7 +216,7 @@
         <section class="panel" id="teaching" role="tabpanel">
             <h2>Teaching</h2>
             <ul class="quiet-list">
-                <li>CS 170, <b>Efficient Algorithms</b> - Fall 2025, Spring 2026</li>
+                <li>CS 170, <b>Efficient Algorithms</b> - Fall 2025, Spring 2026, Fall 2026</li>
                 <li>EECS 16A, <b>Circuits & Linear Algebra</b> - Fall 2022, Spring 2023</li>
                 <li>CS 70, <b>Discrete Math & Probability</b> - Spring 2023 (Academic Intern)</li>
                 <li>CS 61C, <b>Computer Architecture</b> - Spring 2023 (Academic Intern)</li>
@@ -207,9 +244,12 @@
         });
     });
 
-    document.getElementById("show-citation").addEventListener("click", () => {
-        const citationBox = document.getElementById("citation-box");
-        citationBox.classList.toggle("is-visible");
+    document.querySelectorAll("[data-citation-box]").forEach((button) => {
+        button.addEventListener("click", () => {
+            const citationBox = document.getElementById(button.dataset.citationBox);
+            const isVisible = citationBox.classList.toggle("is-visible");
+            button.setAttribute("aria-expanded", String(isVisible));
+        });
     });
 </script>
 </body>
