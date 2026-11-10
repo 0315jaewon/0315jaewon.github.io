@@ -24,6 +24,15 @@ npm run dev
 Open `http://localhost:3000`.
 
 ## Build & Deploy
+### GitHub Pages (this repository)
+The root `.github/workflows/pages.yml` builds this app and copies `out/` into
+`_site/research-planner/`, alongside the personal website. The planner is available
+at https://0315jaewon.github.io/research-planner/. Pushing to `main` redeploys both.
+
+When changing domains, use **Export / Import** in the navigation to download your
+data on the old domain and import it on the new one. Browser storage is separate
+for each domain.
+
 ### Vercel
 1. Push this folder to a Git repo.
 2. Import the project in Vercel.

@@ -70,6 +70,13 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
             >
               Log
             </Link>
+            <button
+              type="button"
+              className="rounded-full border border-sand-200 px-3 py-1.5 text-ink-700"
+              onClick={() => dispatch({ type: "OPEN_DATA_MODAL" })}
+            >
+              Export / Import
+            </button>
           </nav>
           <div className="hidden items-center justify-end gap-2 md:flex">
             <button

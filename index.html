@@ -6,15 +6,21 @@
     <title>Jaewon Chang</title>
     <link rel="icon" href="chicken.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="font-awesome.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b58f5b2e5d.js" crossorigin="anonymous"></script>
     <script>
-        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+        // Vercel serves this endpoint; GitHub Pages and local previews do not.
+        if (!window.location.hostname.endsWith(".github.io") &&
+            !["localhost", "127.0.0.1", ""].includes(window.location.hostname)) {
+            window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+            const analytics = document.createElement("script");
+            analytics.src = "/_vercel/insights/script.js";
+            analytics.defer = true;
+            document.head.appendChild(analytics);
+        }
     </script>
-    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 <div class="page">
